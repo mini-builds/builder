@@ -1,10 +1,12 @@
 package io.minibuilds.designpatterns.monster;
 
-import io.minibuilds.designpatterns.builder.MonsterBuilder;
 
 public interface Monster {
+  enum Type {UNKNOWN, CYCLOPES, MANTICORE}
+  enum Weapon {NONE, SWORD, BOW}
+
   String getName();
-  MonsterBuilder.Type getType();
-  MonsterBuilder.Weapon getWeapon();
+  Type getType();
+  Weapon getWeapon();
   void greet();
 }

@@ -1,13 +1,10 @@
 package io.minibuilds.designpatterns.monster.impl;
 
-import io.minibuilds.designpatterns.builder.MonsterBuilder;
-
 public class EnchantedMonster extends StandardMonster {
-
   public static final String YELLOW = "\033[0;33m";
   public static final String RESET = "\033[0m";
 
-  public EnchantedMonster(String name, MonsterBuilder.Type type, MonsterBuilder.Weapon weapon) {
+  public EnchantedMonster(String name, Type type, Weapon weapon) {
     super(name, type, weapon);
   }
 

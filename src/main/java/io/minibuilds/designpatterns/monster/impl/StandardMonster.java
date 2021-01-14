@@ -1,14 +1,13 @@
 package io.minibuilds.designpatterns.monster.impl;
 
-import io.minibuilds.designpatterns.builder.MonsterBuilder;
 import io.minibuilds.designpatterns.monster.Monster;
 
 public class StandardMonster implements Monster {
   private final String name;
-  private final MonsterBuilder.Type type;
-  private final MonsterBuilder.Weapon weapon;
+  private final Type type;
+  private final Weapon weapon;
 
-  public StandardMonster(String name, MonsterBuilder.Type type, MonsterBuilder.Weapon weapon) {
+  public StandardMonster(String name, Type type, Weapon weapon) {
     this.name = name;
     this.type = type;
     this.weapon = weapon;
@@ -20,12 +19,12 @@ public class StandardMonster implements Monster {
   }
 
   @Override
-  public MonsterBuilder.Type getType() {
+  public Type getType() {
     return type;
   }
 
   @Override
-  public MonsterBuilder.Weapon getWeapon() {
+  public Weapon getWeapon() {
     return weapon;
   }
 

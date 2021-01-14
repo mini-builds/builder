@@ -13,8 +13,8 @@ public class Main {
   public static void main(String[] args) {
     System.out.println("After entering a regular forest you hear from the bushes");
 
-    Monster barry = builder().name("Barry").type(MonsterBuilder.Type.CYCLOPES).weapon(MonsterBuilder.Weapon.SWORD).build();
-    Monster sally = builder().name("Sally").type(MonsterBuilder.Type.MANTICORE).weapon(MonsterBuilder.Weapon.BOW).build();
+    Monster barry = builder().name("Barry").type(Monster.Type.CYCLOPES).weapon(Monster.Weapon.SWORD).build();
+    Monster sally = builder().name("Sally").type(Monster.Type.MANTICORE).weapon(Monster.Weapon.BOW).build();
 
     barry.greet();
     sally.greet();
@@ -22,8 +22,8 @@ public class Main {
     System.out.println();
     System.out.println("Naturally you ignore these bush dwelling weirdos and proceed to the enchanted forest where from the bushes you hear");
 
-    Monster jammy = builder().name("Jammy").type(MonsterBuilder.Type.CYCLOPES).weapon(MonsterBuilder.Weapon.SWORD).status(MonsterBuilder.Status.ENCHANTED).build();
-    Monster becca = builder().name("Becca").type(MonsterBuilder.Type.MANTICORE).weapon(MonsterBuilder.Weapon.BOW).status(MonsterBuilder.Status.ENCHANTED).build();
+    Monster jammy = builder().name("Jammy").type(Monster.Type.CYCLOPES).weapon(Monster.Weapon.SWORD).status(MonsterBuilder.Status.ENCHANTED).build();
+    Monster becca = builder().name("Becca").type(Monster.Type.MANTICORE).weapon(Monster.Weapon.BOW).status(MonsterBuilder.Status.ENCHANTED).build();
 
     jammy.greet();
     becca.greet();

@@ -6,10 +6,9 @@ import io.minibuilds.designpatterns.monster.impl.StandardMonster;
 import io.minibuilds.designpatterns.builder.MonsterBuilder;
 
 public class DefaultMonsterBuilder implements MonsterBuilder {
-
   private String name = "Unknown";
-  private MonsterBuilder.Type type = Type.UNKNOWN;
-  private MonsterBuilder.Weapon weapon = Weapon.NONE;
+  private Monster.Type type = Monster.Type.UNKNOWN;
+  private Monster.Weapon weapon = Monster.Weapon.NONE;
   private MonsterBuilder.Status status = Status.NONE;
 
   @Override
@@ -19,13 +18,13 @@ public class DefaultMonsterBuilder implements MonsterBuilder {
   }
 
   @Override
-  public MonsterBuilder type(Type type) {
+  public MonsterBuilder type(Monster.Type type) {
     this.type = type;
     return this;
   }
 
   @Override
-  public MonsterBuilder weapon(Weapon weapon) {
+  public MonsterBuilder weapon(Monster.Weapon weapon) {
     this.weapon = weapon;
     return this;
   }
